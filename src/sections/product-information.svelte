@@ -9,7 +9,7 @@
 	}
 </script>
 
-<div class="px-6 md:p-0">
+<section class="px-6 md:p-0">
 	<h3 class="text-orange-600 font-kumbh text-[13px] font-bold uppercase tracking-[2px]">Sneaker Company</h3>
 	<h2 class="mt-[19px] md:mt-8 text-heading-xl">Fall Limited Edition Sneakers</h2>
 
@@ -22,7 +22,11 @@
 		<dd class="col-start-2 col-end-3 md:row-start-1 md:row-end-2 text-orange-600 self-center px-2 py-1 rounded-[6px] bg-orange-300">50%</dd>
 
 		<dt class="sr-only">New Price</dt>
-		<dd class="text-heading-lg col-start-1 col-end-2 row-start-1 row-end-2 md:col-start-auto md:col-end-auto text-grey-1200 font-bold">$125.00</dd>
+		<dd class="text-heading-lg col-start-1 col-end-2 row-start-1 row-end-2 md:col-start-auto md:col-end-auto text-grey-1200 font-bold">
+			<label class="cursor-pointer" for="quantity">
+				$125.00
+			</label>
+		</dd>
 
 		<dt class="sr-only">Old Price</dt>
 		<dd class="text-body font-bold col-start-3 col-end-4 md:col-start-auto justify-self-end self-center md:justify-self-auto md:self-auto md:col-end-auto text-[#B6BCC8] line-through">$250.00</dd>
@@ -35,4 +39,4 @@
 			Add to Cart
 		</Button>
 	</form>
-</div>
+</section>

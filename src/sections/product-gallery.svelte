@@ -11,7 +11,7 @@ import RippleSpinner from "$components/ripple-spinner.svelte";
 
 <svelte:window bind:innerWidth={innerWidth} />
 
-<div>
+<section>
 	{#if innerWidth > 767}
 		<button 
 			on:click={() => $isCarouselOpen = true}
@@ -39,4 +39,4 @@ import RippleSpinner from "$components/ripple-spinner.svelte";
 			<RippleSpinner />
 		</div>
 	{/if}	
-</div>
+</section>

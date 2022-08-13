@@ -13,6 +13,7 @@
 	</button>
 
 	<a href="/">
+		<p class="sr-only">sneakers</p>
 		<Logo />
 	</a>
 
