@@ -4,7 +4,9 @@
 	import Product from "$sections/product.svelte";
 </script>
 
-<h1 class="sr-only">E-commerce product page</h1>
+<header>
+	<h1 class="sr-only">E-commerce product page</h1>
+</header>
 <Nav />
 <Product />
 <CarouselModel />
