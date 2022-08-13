@@ -2,7 +2,7 @@
 	import { isDrawerOpen } from "$lib/store";
 	import { clickOutside } from "svelte-use-click-outside"
 	import { fade, fly } from "svelte/transition"
-	import Close from "./close.svelte";
+	import Close from "$components/close.svelte";
 
 	let closeButton: HTMLButtonElement;
 	$: if ($isDrawerOpen) {
@@ -17,7 +17,7 @@
 </script>
 
 {#if $isDrawerOpen}
-	<aside transition:fade={FADE_OPTIONS} class="fixed top-0 left-0 w-screen h-screen bg-[black]/75">
+	<aside transition:fade={FADE_OPTIONS} class="fixed top-0 z-20 left-0 w-screen h-screen bg-[black]/75">
 		<nav 
 			use:clickOutside={onClose} 
 			in:fly={FLY_OPTIONS} 

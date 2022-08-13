@@ -9,3 +9,21 @@
 		@apply grid w-full max-w-[1110px] justify-self-center;
 	}
 }
+
+@layer utilities {
+	.text-heading-xl {
+		@apply font-kumbh font-bold text-[2.75rem];
+	}
+
+	.text-heading-lg {
+		@apply font-kumbh text-[1.75rem] font-bold;
+	}
+
+	.text-heading-sm {
+		@apply font-kumbh text-[.8125rem] font-bold;
+	}
+
+	.text-body {
+		@apply font-kumbh text-base leading-[26px];
+	}
+}

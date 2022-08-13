@@ -1,8 +1,8 @@
 <script>
 	import CartDropdown from "$components/cart-dropdown.svelte";
-import Logo from "$components/logo.svelte";
-	import NavDrawer from "$components/nav-drawer.svelte";
-import { isDrawerOpen } from "$lib/store";
+	import Logo from "$components/logo.svelte";
+	import NavDrawer from "$sections/nav-drawer.svelte";
+	import { isDrawerOpen } from "$lib/store";
 
 	const onOpenDrawer = () => $isDrawerOpen = true
 </script>
@@ -34,6 +34,6 @@ import { isDrawerOpen } from "$lib/store";
 
 <style>
 	nav a:nth-of-type(n+2) {
-		@apply hidden md:block font-kumbh text-[15px] leading-[26px] text-grey-900;
+		@apply hidden md:block font-kumbh text-[15px] leading-[26px] text-grey-900 focus:text-orange-600 focus:font-bold outline-none focus:outline-none transition-all;
 	}
 </style>
