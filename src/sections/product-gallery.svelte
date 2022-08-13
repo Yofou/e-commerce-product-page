@@ -23,13 +23,13 @@ import RippleSpinner from "$components/ripple-spinner.svelte";
 				src={$item.main} 
 				alt="" 
 			/>
-			<div class="bg-[white]/50 absolute inset-0 grid grid-cols-2 grid-rows-[max-content,1fr,max-content] p-2 opacity-0 hover:opacity-100 group-focus:opacity-100 text-grey-1200 transition-opacity">
+			<span class="bg-[white]/50 absolute inset-0 grid grid-cols-2 grid-rows-[max-content,1fr,max-content] p-2 opacity-0 hover:opacity-100 group-focus:opacity-100 text-grey-1200 transition-opacity">
 				<ArrowUp class="w-[50px] h-[50px] -rotate-45 antialiased" />
 				<ArrowUp class="w-[50px] h-[50px] rotate-45 antialiased justify-self-end" />
 				<p class="place-self-center col-span-2 uppercase font-bold font-kumbh text-xl">fullscreen</p>
 				<ArrowUp class="w-[50px] h-[50px] -rotate-[135deg] antialiased self-end" />
 				<ArrowUp class="w-[50px] h-[50px] rotate-[135deg] antialiased self-end justify-self-end" />
-			</div>
+			</span>
 		</button>
 		<GalleryControls />
 		
