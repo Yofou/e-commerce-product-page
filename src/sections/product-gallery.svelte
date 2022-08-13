@@ -12,6 +12,7 @@ import RippleSpinner from "$components/ripple-spinner.svelte";
 <svelte:window bind:innerWidth={innerWidth} />
 
 <section>
+	<h2 class="sr-only">Product Gallery</h2>
 	{#if innerWidth > 767}
 		<button 
 			on:click={() => $isCarouselOpen = true}
